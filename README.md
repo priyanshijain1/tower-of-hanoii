@@ -64,15 +64,19 @@ This keeps the demo easy to run while still making the algorithm visually unders
 
 ## How To Run
 
-Run the recursive version with explaination:
+Using Make (shortcuts):
+
+```bash
+make rec     # recursive mode with explanation
+make it      # iterative mode with explanation
+make test    # run tests
+make clean   # clean __pycache__
+```
+
+Or directly with Python:
 
 ```bash
 python -m src.main recursive --explain
-```
-
-Run the iterative version with explaination:
-
-```bash
 python -m src.main iterative --explain
 ```
 
