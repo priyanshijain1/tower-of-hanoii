@@ -51,6 +51,11 @@ It demonstrates iteration by:
 
 The CLI display explains the loop rule being applied at each step.
 
+## Screenshots
+
+![Recursive mode](assets/recursive.png)
+![Iterative mode](assets/iterative.png)
+
 ## Simple Graphics
 
 The graphics are intentionally terminal-only and lightweight:
@@ -67,10 +72,12 @@ This keeps the demo easy to run while still making the algorithm visually unders
 Using Make (shortcuts):
 
 ```bash
-make rec     # recursive mode with explanation
-make it      # iterative mode with explanation
-make test    # run tests
-make clean   # clean __pycache__
+make rec           # recursive (default 3 disks)
+make rec disks=5   # recursive with 5 disks
+make it            # iterative (default 3 disks)
+make it disks=4    # iterative with 4 disks
+make test          # run tests
+make clean         # clean __pycache__
 ```
 
 Or directly with Python:

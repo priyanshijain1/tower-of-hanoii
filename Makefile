@@ -1,10 +1,12 @@
+disks ?= 3
+
 .PHONY: rec it test clean
 
 rec:
-	python -m src.main recursive --explain
+	python -m src.main recursive $(disks) --explain
 
 it:
-	python -m src.main iterative --explain
+	python -m src.main iterative $(disks) --explain
 
 test:
 	python -m pytest tests/
