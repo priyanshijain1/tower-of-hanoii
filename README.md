@@ -17,20 +17,15 @@ The project uses simple terminal graphics to animate the puzzle and includes **b
 
 ## Project Structure
 
-- `hanoi.py`
-  Main entry point. Choose recursive or iterative mode and run the demo.
-
-- `recursive_hanoi.py`
-  Contains the recursive solution logic. This file highlights how the problem is broken into smaller subproblems.
-
-- `iterative_hanoi.py`
-  Contains the iterative solution logic. This file demonstrates a loop-based solution using repeated legal moves.
-
-- `cli_display.py`
-  Handles terminal output, ASCII tower rendering, and step-by-step explanations.
-
-- `hanoi_common.py`
-  Shared data structures and helper functions used by both approaches.
+```
+src/
+├── main.py              Entry point. Choose recursive or iterative mode and run the demo.
+├── recursive_hanoi.py   Recursive solution logic. Highlights subproblem decomposition.
+├── iterative_hanoi.py   Iterative solution logic. Loop-based legal-move solver.
+├── cli_display.py       Terminal output, ASCII tower rendering, explanations.
+└── hanoi_common.py      Shared data structures and helpers.
+tests/                   Test directory.
+```
 
 ## How Recursion And Iteration Are Demonstrated
 
@@ -72,13 +67,13 @@ This keeps the demo easy to run while still making the algorithm visually unders
 Run the recursive version with explaination:
 
 ```bash
-python hanoi.py recursive --explain
+python -m src.main recursive --explain
 ```
 
 Run the iterative version with explaination:
 
 ```bash
-python hanoi.py iterative --explain
+python -m src.main iterative --explain
 ```
 
 

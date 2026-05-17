@@ -4,7 +4,7 @@ import os
 import sys
 import time
 
-from hanoi_common import HanoiStep, TOWER_NAMES
+from .hanoi_common import HanoiStep, TOWER_NAMES
 
 
 def clear_screen():

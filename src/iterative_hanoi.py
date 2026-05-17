@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from collections.abc import Iterator
 
-from hanoi_common import HanoiStep, build_towers, copy_towers, optimal_move_count, tower_name
+from .hanoi_common import HanoiStep, build_towers, copy_towers, optimal_move_count, tower_name
 
 
 def make_legal_move(towers: list[list[int]], left: int, right: int) -> tuple[int, int, int]:

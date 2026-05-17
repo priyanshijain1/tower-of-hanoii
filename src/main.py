@@ -1,8 +1,8 @@
 import argparse
 
-from cli_display import play_demo
-from iterative_hanoi import generate_iterative_steps
-from recursive_hanoi import generate_recursive_steps
+from .cli_display import play_demo
+from .iterative_hanoi import generate_iterative_steps
+from .recursive_hanoi import generate_recursive_steps
 
 
 def parse_args():

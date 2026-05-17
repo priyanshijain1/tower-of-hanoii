@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from collections.abc import Iterator
 
-from hanoi_common import (
+from .hanoi_common import (
     HanoiStep,
     copy_towers,
     build_towers,
